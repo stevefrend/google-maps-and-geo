@@ -21,7 +21,7 @@ button.addEventListener('click', function (e) {
 })
 
 function getResponse() {
-  fetch(`https://maps.googleapis.com/maps/api/geocode/json?address=${zip}&key=AIzaSyCMa2NoaFNvhZB_5f7-37JVulI-Ej-AwzM`)
+  fetch(`https://maps.googleapis.com/maps/api/geocode/json?address=${zip}&key=${GEO_KEY}`)
   .then(response => response.json())
   .then(data => {
     let lat = data.results[0].geometry.location.lat
