@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple Map</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Find a place</h1>
+      <form id="form">
+        <input type="text" required placeholder="Enter zip or address" id="zip">
+        <button type="submit" id="submit">Find</button>
+      </form>
+      <div id="map"></div>
+    </div>
+    <script src="app.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBR8o5PYZz5H2exUi2isXUEfQO5GTVKmec&callback=initMap"
+    async defer></script>
+  </body>
+</html>
+
